@@ -1,0 +1,92 @@
+# ─── AI / Editor tooling ───────────────────────────────────────────────────────
+# Claude Code metadata — never commit AI assistant state to the repository
+.claude/
+
+# JetBrains IDEs (RubyMine, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# ─── Ruby / Bundler ────────────────────────────────────────────────────────────
+/.bundle
+/vendor/bundle
+
+# ─── Rails ─────────────────────────────────────────────────────────────────────
+# Credentials & secrets — NEVER commit these
+/config/*.key
+/config/credentials/*.key
+/config/master.key
+
+# Environment files
+/.env
+/.env.*
+!/.env.example
+
+# Logs & temp files
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Uploaded files and SQLite databases (development)
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# ─── Database ──────────────────────────────────────────────────────────────────
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+db/*.sqlite3
+db/*.sqlite3-*
+
+# ─── Packwerk cache ────────────────────────────────────────────────────────────
+tmp/cache/packwerk/
+
+# ─── Testing ───────────────────────────────────────────────────────────────────
+/coverage/
+.rspec_status
+
+# VCR cassettes that may contain sensitive API response data
+# Uncomment if your cassettes contain tokens or PII:
+# spec/cassettes/
+
+# ─── OS generated files ────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ─── Miscellaneous ─────────────────────────────────────────────────────────────
+*.orig
+*.bak
+*.patch
