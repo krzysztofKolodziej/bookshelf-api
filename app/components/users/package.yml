@@ -1,0 +1,9 @@
+# app/components/users/package.yml
+#
+# Bounded context: Users domain
+# Enforces that other components cannot directly access internals of this package.
+#
+enforce_dependencies: true
+enforce_privacy: true
+
+public_path: app/components/users/public/

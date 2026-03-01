@@ -1,0 +1,14 @@
+# app/components/books/package.yml
+#
+# Bounded context: Books domain
+# Enforces that other components cannot directly access internals of this package.
+# All cross-boundary communication must go through explicit public API.
+#
+# Learn more: https://github.com/Shopify/packwerk/blob/main/USAGE.md
+
+enforce_dependencies: true
+enforce_privacy: true
+
+# Public API of this package — other packages may reference these constants.
+# Everything else is private by default.
+public_path: app/components/books/public/
