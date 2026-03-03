@@ -47,6 +47,7 @@ gem "solid_cable"
 
 # ─── Development & Test ────────────────────────────────────────────────────────
 group :development, :test do
+  gem "dotenv-rails"               # loads .env into ENV automatically (never commit .env)
   gem "rspec-rails", "~> 7.0"
   gem "factory_bot_rails"
   gem "faker"                      # realistic seed/test data

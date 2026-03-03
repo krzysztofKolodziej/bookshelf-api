@@ -1,0 +1,19 @@
+# Packwerk configuration — domain boundary enforcement (by Shopify)
+# Run: bundle exec packwerk check
+# Docs: https://github.com/Shopify/packwerk/blob/main/USAGE.md
+
+# Include all Ruby files in the project
+include:
+  - "**/*.{rb,rake,erb}"
+
+# Exclude generated/vendor files
+exclude:
+  - "{bin,node_modules,script,tmp,vendor}/**/*"
+  - "db/**/*"
+
+# Packwerk will find all package.yml files under these paths
+package_paths: "**/"
+
+# Enable caching for faster subsequent checks
+cache: true
+cache_directory: "tmp/cache/packwerk"
